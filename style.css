@@ -1,0 +1,402 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* CSS starts here */
+
+:root {
+  font-size: 10px;
+  font-family: arial, sans-serif;
+}
+
+#row1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 30px;
+}
+
+#google-logo {
+  height: auto;
+  width: 122px;
+  margin: 0px 40px 0px 40px;
+}
+
+#search-bar {
+  width: 838px;
+  height: 44px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /*background: red;*/
+  padding: 5px;
+  border: 1px solid;
+  border-radius: 30px;
+  border-color: rgba(223,225,229,1);
+  margin-right: 30px;
+}
+
+#search-bar:hover {
+  box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+  border-color: rgba(223,225,229,0);
+}
+
+#search-bar input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  margin: 0 auto 0 15px;
+  font-size: 1.9rem;
+  outline-color:rgba(0, 0, 0, 0.87);
+  outline-style:none;
+  outline-width:0px;
+}
+
+#search-bar i {
+  color: #4285f4;
+  font-size: 2rem;
+  margin: 0 10px 0 10px;
+}
+
+#search-bar #i1 {
+  color: #9AA0A6;
+  font-size: 1.8rem;
+  margin-right: 12px;
+}
+
+#grid-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  margin: 0 80px 0 auto;
+  border-radius: 50%;
+}
+
+#grid-background:hover {
+  background-color: rgba(60,64,67,0.08);
+}
+
+.fa-th {
+  font-size: 2.5rem;
+  color: #5f6368;
+}
+
+#row2 {
+  width: 100%;
+  border-bottom: 1px solid;
+  border-color:rgb(205, 209, 214);
+}
+
+#sections {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px 0px 200px;
+  width: 838px;
+  color:rgb(95, 99, 104);
+  font-size: 1.8rem;
+}
+
+#sections .active {
+  color: #4285f4;
+  border-bottom: 2px solid;
+}
+
+.section {
+  height: 35px;
+  margin: 0px 10px 0px 10px;
+}
+
+#settings {
+  height: 35px;
+  margin-left: auto;
+  padding-right: 40px;
+}
+
+#settings:hover {
+  color: #4285f4;
+}
+
+#tools {
+  height: 35px;
+}
+
+.section:hover {
+  color: #4285f4;
+}
+
+#row3 {
+  margin-top: 20px;
+  font-size: 1.7rem;
+  color:rgb(112, 117, 122);
+}
+
+#row3 p{
+  margin-left: 200px;
+  margin-bottom: 30px;
+}
+
+.results {
+  width: 838px;
+  font-size: 1.7rem;
+  color:rgb(60, 64, 67);
+  margin-left: 200px;
+}
+
+.img {
+  margin-right: 10px;
+}
+
+.fa-caret-down {
+  margin-left: 12px;
+}
+
+.site {
+  margin-bottom: 5px;
+}
+
+.descr {
+  margin-top: 5px;
+  margin-bottom: 35px;
+}
+
+.descr-sub-links {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+a {
+  color:rgb(26, 13, 171);
+  font-size: 2.4rem;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.results .sub-links a{
+  font-size: 1.5rem;
+}
+
+.sub-links {
+  margin-bottom: 35px;
+}
+
+
+
+.results-table {
+  width: 838px;
+  font-size: 1.7rem;
+  color:rgb(34, 34, 34);
+  margin: 40px 0 50px 175px;
+  padding: 0 20px;
+  border: 1px solid;
+  border-radius: 20px;
+  border-color: rgba(203,205,209,1);
+  font-size: 1.9rem;
+}
+
+.results-table .row {
+  width: 100%;
+  border-bottom: 1px solid;
+  border-color: rgba(203,205,209,1);
+  margin: auto 0 auto -20px;
+  padding: 10px 20px 10px 20px;
+}
+
+.results-table #last-row {
+  margin: auto 0 auto -20px;
+  padding: 10px 20px 10px 20px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.results-related {
+  width: 838px;
+  font-size: 1.7rem;
+  color:rgb(34, 34, 34);
+  margin: 40px 0 50px 175px;
+  padding: 0 20px;
+  border: 1px solid;
+  border-radius: 20px;
+  border-color: rgba(203,205,209,1);
+  font-size: 1.9rem;
+}
+
+.results-related .row {
+  width: 100%;
+  margin: 10px 0 10px -20px;
+  padding: 0px 20px 0px 20px;
+}
+
+.fine {
+  font-size: 1.8rem;
+  color:rgb(112, 117, 122);
+}
+
+.bold-large {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.img-row {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.img-row img{
+  max-width: 72px;
+  max-height: 72px;
+}
+
+.img-row div{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.img-row a{
+  font-size: 1.7rem;
+}
+
+#row4 {
+  width: 838px;
+  font-size: 1.7rem;
+  color:rgb(34, 34, 34);
+  margin-left: 200px;
+  margin-bottom: 50px;
+}
+
+li {
+  list-style: none;
+}
+
+li a{
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+#list-box {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+li {
+ margin-top: 5px;
+ margin-bottom: 5px;
+}
+
+#row5 {
+  width: 838px;
+  font-size: 1.7rem;
+  color:rgb(34, 34, 34);
+  margin-left: 200px;
+  margin-bottom: 30px;
+}
+
+#nav{
+  width: 310px;
+  margin: 0 auto;
+  display: grid;
+  align-items: end;
+  justify-items: center;
+  grid-template-columns: repeat(16, auto);
+  grid-template-rows: auto auto;
+}
+
+#nav div a {
+  color:rgb(66, 133, 244);
+  font-size: 1.7rem;
+}
+
+.letter {
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+#G {
+  font-size: 4.3rem;
+  color: #4285F4;
+}
+
+#o {
+ color: #DB4437; 
+}
+
+.o {
+  color: #F4B400;
+}
+
+#g {
+  color: #4285F4;
+}
+
+#l {
+  color: #0F9D58;
+}
+
+#e {
+  color: #DB4437;
+}
+
+.space {
+  width: 10px;
+}
+
+#chevron {
+  color: #4285F4;
+  padding-top: 3px;
+  align-self: center;
+}
+
+#row6 {
+  width: 100%;
+  height: 40px;
+  background: #f2f2f2;
+  border-top: 1px solid;
+  border-color:rgb(205, 209, 214);
+  color: #5f6368;
+  font-size: 1.7rem;
+}
+
+#row6 ul {
+  width: 838px;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 200px;
+}
+
+#footer-list li{
+  margin-right: 3%;
+}
